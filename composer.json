@@ -1,0 +1,18 @@
+{
+  "name": "voiceworks/hexagonal-app-example",
+  "description": "Hexagonal App Example",
+  "license": "",
+  "autoload": {
+    "psr-4": { "Voiceworks\\": "./src" }
+  },
+  "require": {
+    "php": "~7.0",
+    "codeception/codeception": "*",
+    "codeception/mockery-module": "*"
+  } ,
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0"
+    }
+  }
+}

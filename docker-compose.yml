@@ -1,0 +1,14 @@
+version: '2'
+services:
+    php:
+        build:
+            context: ./docker/php
+            args:
+                TIMEZONE: ${TIMEZONE}
+        ports:
+            - 80:80
+        environment:
+            PHP_ERROR_REPORTING: ${PHP_ERROR_REPORTING}
+        volumes:
+            - .:/var/www/hexagonalArchitecture
+            - /Users/pedroparraortega/Workspace/Repositories/hexagonal-infraestructure-example:/var/www/symfony
